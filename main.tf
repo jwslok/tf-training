@@ -47,7 +47,7 @@ resource "aws_instance" "web" {
  
   count                  = "${var.num_webs}"
   subnet_id              = "subnet-faec2e91"
-  vpc_security_group_ids = ["sg-c7eb27ad"]
+  vpc_security_group_ids = ["sg-c7eb27ad-1"]
 
   tags {
     "Identity" = "asas-starfish"
